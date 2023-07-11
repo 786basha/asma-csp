@@ -123,7 +123,9 @@ img {vertical-align: middle;}
     padding: 20px;
     text-align: center;
   }
-  
+  .bg-text h1{
+    font-size:50px;
+  }
 
 
 /* On smaller screens, decrease text size */
@@ -141,5 +143,11 @@ img {vertical-align: middle;}
   }
   .bg-text{
     margin-top: 28vh;
+  }
+  .bg-text h2{
+    font-size:20px;
+  }
+  .bg-text h1{
+    font-size:35px;
   }
 }
