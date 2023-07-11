@@ -1,3 +1,9 @@
+.sticky {
+    position: fixed;
+    top: 60%;
+    width: 20px;
+  }
+
 header{
     height: fit-content;
 }
@@ -87,6 +93,34 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+
+nav{
+    width: 50px;
+    height: 20vh;
+    margin: 2px;
+    display: flex;
+
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    padding: 10px;
+    /* border: 1px solid black; */
+    margin-bottom: -8%;
+}
+nav #navbar a{
+    margin: 5px -12px;
+    background-color: rgb(226, 132, 132);
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.fa{
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+}
+
 .bg-img {
     
     /* The image used */
@@ -126,7 +160,37 @@ img {vertical-align: middle;}
   .bg-text h1{
     font-size:50px;
   }
+  section{
+    margin: 10px 50px;
+  }
+  .top h3{
+    padding: 20px;
+    width: 85vw;
+    margin: auto;
+    text-align: center;
+  }
 
+  section .img{
+    display: flex;
+  }
+  .img .txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .img .mg img{ 
+    padding: 10px;
+    width: 300px;
+    height: 250px;
+  }
+  #od{
+    flex-flow: row-reverse;
+  }
+  .txt{
+    display: flex;
+    flex-direction: column;
+  }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 480px) {
@@ -149,5 +213,9 @@ img {vertical-align: middle;}
   }
   .bg-text h1{
     font-size:35px;
+  }
+  .img, #od{
+    flex-direction: column;
+    text-align: center;
   }
 }
