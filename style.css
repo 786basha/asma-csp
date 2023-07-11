@@ -1,5 +1,5 @@
 header{
-    height: 500px;
+    height: fit-content;
 }
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -87,17 +87,59 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+.bg-img {
+    
+    /* The image used */
+    background-image: url("/pro-img/as6.jpeg");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 100vh; 
+    width: 90vw;
+    margin: auto;
+    /* Center and scale the image nicely */
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    margin-top: 40vh;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 480px) {
   .prev, .next,.text {font-size: 11px}
-  .box{
+  .bg-img{
     width: 100vw;
     height: 80vh;
-    margin-top: -20vh;
+    margin: 0;
+    /* margin-top: 20vh; */
     background-image: url('/img/mobile-bg-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .bg-text{
+    margin-top: 28vh;
   }
 }
