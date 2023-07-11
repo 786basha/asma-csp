@@ -94,7 +94,7 @@ img {vertical-align: middle;}
   .box{
     width: 100vw;
     height: 80vh;
-    margin-top: -40vh;
+    /* margin-top: -40vh; */
     background-image: url('/img/mobile-bg-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
