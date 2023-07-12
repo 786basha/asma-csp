@@ -191,14 +191,17 @@ nav #navbar a{
     display: flex;
     flex-direction: column;
   }
+  .btn{
+    visibility: hidden;
+  }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 480px) {
   .prev, .next,.text {font-size: 11px}
   .bg-img{
-    width: 88vw;
+    width: 100%;
     height: 80vh;
-    margin-left: 12vw;
+    /* margin-left: 12vw; */
     /* margin-top: 20vh; */
     background-image: url('/pro-img/as2.jpeg');
     background-position: center;
@@ -207,7 +210,7 @@ nav #navbar a{
   }
   .bg-text{
     margin-top: 28vh;
-    margin-left: 6vw;
+    /* margin-left: 6vw; */
   }
   .bg-text h2{
     font-size:20px;
@@ -220,6 +223,7 @@ nav #navbar a{
     text-align: center;
   }
   nav{
+  visibility: hidden;
     position: absolute;
   }
   nav #navbar{
@@ -231,5 +235,34 @@ nav #navbar a{
     text-align: center;
     width: 50px;
     height: 50px;
+  }
+  .btn{
+    visibility: visible;
+    width: fit-content;
+    position:relative;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    background-color: gray;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+  }
+  .mb-icon{
+    width: 30px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn:hover{
+    width: 50px;
+    text-align: center;
+  }
+  .btn a{
+    padding: 10px;
+    text-decoration: none;
+  }
+  main{
+    margin-top: -30vh;
   }
 }
